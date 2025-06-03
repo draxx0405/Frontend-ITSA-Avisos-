@@ -52,7 +52,12 @@ export default function Login() {
 
     const handleMessage = (event) => {
         // Asegúrate de que el mensaje provenga de un origen permitido
-        const allowedOrigins = ['*'];
+        const allowedOrigins = [
+  'https://backend-itsa-avisos-production-ecc1.up.railway.app',
+  'https://frontend-itsa-avisos-production.up.railway.app'
+];
+
+
         if (!allowedOrigins.includes(event.origin)) return;
 
         if (event.data.type === 'MSAL_AUTH' && event.data.token) {
