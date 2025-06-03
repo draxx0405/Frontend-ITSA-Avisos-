@@ -45,7 +45,7 @@ export default function Login() {
     const handleLogin = () => {
     // Abre la ventana emergente para iniciar sesión
     const authWindow = window.open(
-        'http://localhost:8000/auth/login',
+        'http://backend-itsa-avisos-production-ecc1.up.railway.app/auth/login',
         'msauth',
         'width=500,height=600,left=200,top=200'
     );
