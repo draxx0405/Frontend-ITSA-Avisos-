@@ -6,7 +6,6 @@
         console.error("No hay token disponible.");
         return;
     }
-
     try {
         const res = await fetch(url, {
             headers: {
