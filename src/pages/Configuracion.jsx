@@ -29,7 +29,7 @@ export default function Configuracion() {
         const token = localStorage.getItem("msal_token");
 
         try {
-            const response = await fetch("http://https://backend-itsa-avisos-production-ecc1.up.railway.app//api/users/all", {
+            const response = await fetch("http://https://backend-itsa-avisos-production-ecc1.up.railway.app/api/users/all", {
               method: "GET",
               headers: {
                 Authorization: `Bearer ${token}`
