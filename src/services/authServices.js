@@ -43,7 +43,7 @@
     }
 
     try {
-        const response = await fetch('https://backend-itsa-avisos-production.up.railway.app/auth/refresh', {
+        const response = await fetch('https://backend-itsa-avisos-production-ecc1.up.railway.app/auth/refresh', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
