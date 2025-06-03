@@ -105,7 +105,7 @@ export default function ContenedorTeams() {
       if (!token) throw new Error("No se encontró token de autenticación");
     
       // Hacer una sola petición al backend
-      const response = await fetch("http://localhost:8000/api/teams/send-message-with-attachment", {
+      const response = await fetch("https://backend-itsa-avisos-production-ecc1.up.railway.app/api/teams/send-message-with-attachment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -154,7 +154,7 @@ export default function ContenedorTeams() {
     try {
           
         for (const user of usuarios) {
-            const response = await fetch("http://localhost:8000/api/teams/send-message", {
+            const response = await fetch("https://backend-itsa-avisos-production-ecc1.up.railway.app/api/teams/send-message", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
