@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "start": "vite preview --host 0.0.0.0 --port $PORT",
-    "build": "vite build"
-  },
+"scripts": {
+  "start": "vite preview --host 0.0.0.0 --port $PORT",
+  "build": "vite build",
+  "dev": "vite"
+},
   "dependencies": {
     "@azure/msal-browser": "^4.7.0",
     "@chakra-ui/react": "^2.10.7",
