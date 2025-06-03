@@ -10,7 +10,7 @@ export default function Login() {
 
     useEffect(() => {
         // ✅ Si venimos del logout (redirect desde Azure)
-        if (window.location.href.includes("https://d10gzc4g-5173.usw3.devtunnels.ms/")) {
+        if (window.location.href.includes("https://frontend-itsa-avisos-production.up.railway.app/")) {
             console.log("Volviendo del logout. Limpiando datos...");
             localStorage.clear();
             return; // Evita seguir con la lógica del token
@@ -19,7 +19,7 @@ export default function Login() {
         const token = localStorage.getItem('msal_token');
         if (!token) return;
 
-        fetch('http://localhost:8000/api/users/me', {
+        fetch('http://backend-itsa-avisos-production-ecc1.up.railway.app/api/users/me', {
             headers: {
                 Authorization: `Bearer ${token}`
             }
