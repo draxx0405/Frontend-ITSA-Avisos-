@@ -26,4 +26,3 @@ dist-ssr
 # Excluye datos sensibles
 /data/
 /storage/
-*.json
