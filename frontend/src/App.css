@@ -1,0 +1,9 @@
+/* index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Evita el scroll si es innecesario */
+  width: fit-content;
+  box-sizing: border-box;
+}

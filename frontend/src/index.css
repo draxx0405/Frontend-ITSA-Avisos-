@@ -1,0 +1,29 @@
+/* index.css */
+html, body {
+  width: fit-content;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Evita el scroll si es innecesario */
+}
+
+/* Scrollbar en navegadores basados en WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #127357; /* Color del scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0e5a46; /* Color más oscuro al pasar el mouse */
+}
